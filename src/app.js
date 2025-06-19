@@ -10,7 +10,7 @@ connectDB();
 app.use(express.json());
 
 // Authentication routes
-app.use("/api/auth", authRouter);
+app.use("/api/auth/user", authRouter);
 
 // Basic route for testing
 app.get("/", (req, res) => {
