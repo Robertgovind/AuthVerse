@@ -10,11 +10,15 @@ const userSchema = new mongoose.Schema(
     },
     password: {
       type: String,
-      required: true,
     },
     name: {
       type: String,
       required: true,
+    },
+    googleId: {
+      type: String,
+      unique: true,
+      sparse: true,
     },
     role: {
       type: String,
@@ -23,11 +27,9 @@ const userSchema = new mongoose.Schema(
     },
     address: {
       type: String,
-      required: true,
     },
     phone: {
       type: String,
-      required: true,
     },
   },
   { timestamps: true }
