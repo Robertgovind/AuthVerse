@@ -12,6 +12,8 @@ app.use(express.json());
 // Authentication routes
 app.use("/api/auth/user", authRouter);
 
+// Authenticatoin using google
+
 // Basic route for testing
 app.get("/", (req, res) => {
   res.status(200).json({ success: true, message: "Welcome to the API!" });
