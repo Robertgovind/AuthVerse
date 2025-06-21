@@ -1,6 +1,6 @@
-# 🔐 FlexiAuth - Email/Password Authentication (Backend Only)
+# 🔐 AuthVerse - Email/Password Authentication (Backend Only)
 
-FlexiAuth is a modular, backend-only authentication API built using **Node.js**, **Express**, **MongoDB**, and **JWT**.  
+AuthVerse is a modular, backend-only authentication API built using **Node.js**, **Express**, **MongoDB**, and **JWT**.  
 This project implements a secure authentication based on**Email/Password-based authentication system**, **OAuth (Social Login (google, gitHub, facebook))**, **Magic Link Authentication**, **OTP based Login**, **Two-Factor Authentication(2FA)**
 
 ---
