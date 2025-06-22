@@ -31,4 +31,3 @@ This project implements a secure authentication based on**Email/Password-based a
 ---
 
 ## 📂 Folder Structure
-

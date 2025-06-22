@@ -19,9 +19,9 @@ passport.use(
           googleId: profile.id,
           name: profile.displayName,
         });
-        done(null, newUser);
+        return done(null, newUser);
       } catch (error) {
-        done(error, null);
+        return done(error, null);
       }
     }
   )
