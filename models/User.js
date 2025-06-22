@@ -22,6 +22,9 @@ const userSchema = new mongoose.Schema(
     githubId: {
       type: String,
     },
+    facebookId: {
+      type: String,
+    },
     role: {
       type: String,
       enum: ["user", "admin"],
