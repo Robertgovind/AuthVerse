@@ -83,7 +83,8 @@ npm run dev
 
 ### 2. Social Login(google, github, facebook)
 
-# 🙋‍♂️ Author
+## 🙋‍♂️ Author
 
 ## Govind Kr Yadav
-🔗 [LinkedIn](https://www.linkedin.com/in/govind-kr-yadav-715b9426a/) | 📧 [govind803556@gmail.com](milto:govind803556@gmail.com)
+
+🔗 [LinkedIn](https://www.linkedin.com/in/govind-kr-yadav-715b9426a/) | 📧 [Email Me](mailto:govind803556@gmail.com)
