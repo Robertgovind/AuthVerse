@@ -4,7 +4,6 @@ const userSchema = new mongoose.Schema(
   {
     email: {
       type: String,
-      required: true,
       unique: true,
       lowecase: true,
     },
@@ -19,6 +18,9 @@ const userSchema = new mongoose.Schema(
       type: String,
       unique: true,
       sparse: true,
+    },
+    githubId: {
+      type: String,
     },
     role: {
       type: String,

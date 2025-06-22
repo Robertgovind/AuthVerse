@@ -2,9 +2,13 @@ import express from "express";
 import "dotenv/config";
 import connectDB from "./config/db.js";
 import authRouter from "./routes/authRoute.js";
+
 import googleAuthRouter from "./routes/googleAuthRoute.js";
-import passport from "./utils/passport/googleStrategy.js";
+// import passport from "./utils/passport/googleStrategy.js";
 import sessionMiddleware from "./middlewares/session.js";
+
+import passport from "./utils/passport/githubStrategy.js";
+import githubAuthRouter from "./routes/githubAuthRoute.js";
 
 const app = express();
 
@@ -20,7 +24,11 @@ app.use(sessionMiddleware);
 app.use(passport.initialize());
 app.use(passport.session());
 
+// google login route
 app.use("/api/auth", googleAuthRouter);
+
+// github login route
+app.use("/api/auth", githubAuthRouter);
 
 // Basic route for testing
 app.get("/", (req, res) => {
