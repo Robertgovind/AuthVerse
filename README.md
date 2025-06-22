@@ -58,9 +58,15 @@ JWT_SECRET=your_jwt_secret
 
 GOOGLE_ID=your_google_client_id
 GOOGLE_SECRET=your_google_client_secret
+GOOGLE_CALLBACK_URL=http://localhost:4000/api/auth/google/callback
 
 GITHUB_ID=your_github_client_id
 GITHUB_SECRET=your_github_client_secret
+GITHUB_CALLBACK_URL=http://localhost:4000/api/auth/github/callback
+
+FACEBOOK_APP_ID=your_app_id
+FACEBOOK_APP_SECRET=your_app_secret
+FACEBOOK_CALLBACK_URL=http://localhost:4000/api/auth/facebook/callback
 
 ```
 
@@ -83,8 +89,23 @@ npm run dev
 
 ### 2. Social Login(google, github, facebook)
 
+- Google based login  
+   GET api/auth/google
+
+- gitHub based login  
+   GET api/auth/github
+
+- Facebook based login  
+   GET api/auth/facebook
+
+## 3. Magic Link Authentication
+
+## 4. OTP-based Login
+
+## 5. Two-Factor Authentication(2FA)
+
 ## 🙋‍♂️ Author
 
 ## Govind Kr Yadav
 
-🔗 [LinkedIn](https://www.linkedin.com/in/govind-kr-yadav-715b9426a/) | 📧 [Email Me](mailto:govind803556@gmail.com)
+🔗 [LinkedIn](https://www.linkedin.com/in/govind-kr-yadav-715b9426a/)  |  📧 [Email Me](mailto:govind803556@gmail.com)
