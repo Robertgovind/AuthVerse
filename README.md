@@ -27,7 +27,63 @@ This project implements a secure authentication based on**Email/Password-based a
 - bcryptjs for password hashing
 - dotenv for environment configs
 - express-validator (optional)
+- Nodemailer (email sending)
+- Passport.js (for OAuth)
 
 ---
 
 ## 📂 Folder Structure
+
+## 🛠 Setup Instructions
+
+### 1. **Clone the repository:**
+
+```bash
+git clone https://github.com/Robertgovind/AuthVerse.git
+cd AuthVerse
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Create .env file
+
+```bash
+PORT=4000
+MONGO_URI=mongodb://localhost:27017/authverse
+JWT_SECRET=your_jwt_secret
+
+GOOGLE_ID=your_google_client_id
+GOOGLE_SECRET=your_google_client_secret
+
+GITHUB_ID=your_github_client_id
+GITHUB_SECRET=your_github_client_secret
+
+```
+
+### 4. Run the Server
+
+``` bash
+npm run dev
+
+```
+
+## API Endpoints
+
+### 1. Email/Password(JWT)
+
+- POST /api/auth/user/register  
+   Body:{ "email": "", "password":"" }
+
+- POST /api/auth/user/login  
+   Body:{ "email": "", "password":"" }
+
+### 2. Social Login(google, github, facebook)
+
+# 🙋‍♂️ Author
+
+## Govind Kr Yadav
+🔗 [LinkedIn](https://www.linkedin.com/in/govind-kr-yadav-715b9426a/) | 📧 [govind803556@gmail.com](milto:govind803556@gmail.com)
