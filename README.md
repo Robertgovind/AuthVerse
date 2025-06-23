@@ -79,6 +79,8 @@ npm run dev
 
 ## API Endpoints
 
+- URL:http://localhost:4000
+
 ### 1. Email/Password(JWT)
 
 - POST /api/auth/user/register  
