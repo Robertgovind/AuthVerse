@@ -9,7 +9,7 @@ const transporter = nodemailer.createTransport({
 });
 
 const sendMagicLink = async (email, token) => {
-  const url = `${process.env.CLIENT_URL}/magic-login?token=${token}`;
+  const url = `${process.env.CLIENT_URL}/api/auth/magic-link?token=${token}`;
 
   await transporter.sendMail({
     from: `"AuthVerse" <${process.env.EMAIL_USER}>`,

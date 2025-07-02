@@ -12,6 +12,7 @@ import githubAuthRouter from "./routes/githubAuthRoute.js";
 
 import passport from "./utils/passport/facebookStrategy.js";
 import facebookAuthRouter from "./routes/facebookAuthRoute.js";
+import magicLinkAuthRouter from "./routes/magicLinkAuthRoute.js";
 
 const app = express();
 
@@ -35,6 +36,13 @@ app.use("/api/auth", githubAuthRouter);
 
 // facebook login
 app.use("/api/auth", facebookAuthRouter);
+
+// magic link routes
+app.use("/api/auth", magicLinkAuthRouter);
+
+app.get("/login", (req, res) => {
+  res.send("<h1>You are logged in and this is your profile</h1>");
+});
 
 // Basic route for testing
 app.get("/", (req, res) => {
