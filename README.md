@@ -102,6 +102,12 @@ npm run dev
 
 ## 3. Magic Link Authentication
 
+- For getting login email link
+  - POST api/auth/magic-link/request
+
+- After that use provided link that hits get request through browser
+  - GET api/auth/magic-link?token=dfsjdfhsdkjfhskdjhf
+
 ## 4. OTP-based Login
 
 ## 5. Two-Factor Authentication(2FA)
