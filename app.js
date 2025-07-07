@@ -14,11 +14,14 @@ import passport from "./utils/passport/facebookStrategy.js";
 import facebookAuthRouter from "./routes/facebookAuthRoute.js";
 import magicLinkAuthRouter from "./routes/magicLinkAuthRoute.js";
 
+import otpRouter from "./routes/otpRoutes.js";
+import bodyParser from "body-parser";
 const app = express();
 
 // Connection to the database
 connectDB();
 app.use(express.json());
+app.use(bodyParser.json());
 
 // Authentication routes
 app.use("/api/auth/user", authRouter);
@@ -39,6 +42,9 @@ app.use("/api/auth", facebookAuthRouter);
 
 // magic link routes
 app.use("/api/auth", magicLinkAuthRouter);
+
+// otp routes
+app.use("/api/auth", otpRouter);
 
 app.get("/login", (req, res) => {
   res.send("<h1>You are logged in and this is your profile</h1>");
